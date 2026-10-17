@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <div id="offer" class="bg-black flex justify-center gap-12 h-10 items-center h-10">
+        <h1  class="text-gray-200 text-xl font-bold text-center">Sign Up and GET 20% OFF for your first Order</h1>
+        <p id="close" class="text-gray-200 text-xl font-bold">X</p>
+    </div>
+    <div class="flex justify-between w-full p-5 sticky top-0 z-10 bg-white">
+        <h1 class="text-2xl font-bold">Nostra</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
+            class="w-6 md:hidden p-1 cursor-pointer"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+            <path fill="rgb(0, 1, 2)"
+                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+        </svg>
+        <nav class="hidden md:flex gap-6">
+            <a href="#">Home</a>
+            <a href="#new-arrivals">New Arrival</a>
+            <a href="#most-wanted">Most Wanted</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </div>
+    <div class="relative p-5">
+        <img id="bannerImage" src="./images/summer1.jpg" class="w-full h-[180px] md:h-[350px] object-cover"
+            alt="Summer Collection">
+        <!--Left arrow-->
+        <button onclick="previousImage()"
+            class="absolute left-60 top-1/2 -translate-y-16 text-white text-8xl font-bold drop-shadow-lg z-10 cursor-pointer">&#10094;</button>
+        <!-- right arrow -->
+        <button onclick="nextImage()"
+            class="absolute right-60 top-1/2 -translate-y-16 text-white text-8xl font-bold drop-shadow-lg z-10 cursor-pointer">&#10095;</button>
+        <h1
+            class="absolute left-1/2 top-1/3 -translate-x-1/2 text-3xl md:text-6xl font-bold text-white text-center w-full">
+            Level Up Your Style with our</h1>
+        <p class="absolute left-1/2 bottom-1/3 -translate-x-1/2 text-white text-xl md:text-2xl font-bold">Summer
+            Collection</p>
+        <button
+            class="absolute left-1/2 top-3/4 -translate-x-1/2 -translate-y-1/2 bg-white text-black px-6 py-2 rounded-sm">Shop
+            Now<span class="text-xl">&rarr;</span></button>
+    </div>
+    <div>
+        <h1 class="p-5 font-bold text-2xl md:text-3xl">Brands</h1>
+        <div class="flex gap-8 overflow-x-auto p-5 md:justify-between">
+            <div class="flex flex-col items-center shrink-0 min-w-16 md:shrink">
+                <img src="./images/puma.jpeg" class="w-14 h-8 object-contain" alt="Puma">
+                <p class="text-sm mt-2">Puma</p>
+            </div>
+            <div class="flex flex-col items-center shrink-0 min-w-16 md:shrink">
+                <img src="./images/Adidas.png" class="w-14 h-8 object-contain" alt="Adidas">
+                <p class="text-sm mt-2">Adidas</p>
+            </div>
+            <div class="flex flex-col items-center shrink-0 min-w-16 md:shrink">
+                <img src="./images/armya.png" class="w-14 h-8 object-contain" alt="Armya">
+                <p class="text-sm mt-2">Armya</p>
+            </div>
+            <div class="flex flex-col items-center shrink-0 min-w-16 md:shrink">
+                <img src="./images/cottonworld.jpeg" class="w-14 h-8 object-contain" alt="Cottonworld">
+                <p class="text-sm mt-2">Cottonworld</p>
+            </div>
+            <div class="flex flex-col items-center shrink-0 min-w-16 md:shrink">
+                <img src="./images/chidiyaa.jfif" class="w-14 h-8 object-contain" alt="Chidiyaa">
+                <p class="text-sm mt-2">Chidiyaa</p>
+            </div>
+            <div class="flex flex-col items-center shrink-0 min-w-16 md:shrink">
+                <img src="./images/cottonculture.jfif" class="w-14 h-8 object-contain" alt="Cottonculture">
+                <p class="text-sm mt-2">Cottonculture</p>
+            </div>
+            <div class="flex flex-col items-center shrink-0 min-w-16 md:shrink">
+                <img src="./images/melange.jfif" class="w-14 h-8 object-contain" alt="Melange">
+                <p class="text-sm mt-2">Melange</p>
+            </div>
+            <div class="flex flex-col items-center shrink-0 min-w-16 md:shrink">
+                <img src="./images/nilam.jfif" class="w-14 h-8 object-contain" alt="Nilam">
+                <p class="text-sm mt-2">Nilam</p>
+            </div>
+            <div class="flex flex-col items-center shrink-0 min-w-16 md:shrink">
+                <img src="./images/chettinad.jfif" class="w-14 h-8 object-contain" alt="Chettinad">
+                <p class="text-sm mt-2">Chettinad</p>
+            </div>
+            <div class="flex flex-col items-center shrink-0 min-w-16 md:shrink">
+                <img src="./images/truebrowns.jfif" class="w-14 h-8 object-contain" alt="TrueBrowns">
+                <p class="text-sm mt-2">TrueBrowns</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col md:flex-row md:justify-between gap-4 p-5 mt-5">
+        <h1 class="font-bold text-2xl md:text-3xl">We Provide <br class="hidden md:block">Best Customer Experiences</h1>
+        <p class="text-gray-600">|| We ensure that our customer have the best shopping experience</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-5">
+        <div class="bg-gray-100 p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
+                class="w-8 h-8"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path fill="rgb(0, 1, 2)"
+                    d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM320 112C205.1 112 112 205.1 112 320C112 434.9 205.1 528 320 528C434.9 528 528 434.9 528 320C528 205.1 434.9 112 320 112zM390.7 233.9C398.5 223.2 413.5 220.8 424.2 228.6C434.9 236.4 437.3 251.4 429.5 262.1L307.4 430.1C303.3 435.8 296.9 439.4 289.9 439.9C282.9 440.4 276 437.9 271.1 433L215.2 377.1C205.8 367.7 205.8 352.5 215.2 343.2C224.6 333.9 239.8 333.8 249.1 343.2L285.1 379.2L390.7 234z" />
+            </svg>
+            <h1 class="font-bold text-xl">Original Products</h1>
+            <p>We provide high-quality and original products for our customers.</p>
+        </div>
+        <div class="bg-gray-100 p-2">
+            <i class="fa-regular fa-face-smile" style="color: rgb(0, 1, 2);font-size: 30px;"></i>
+            <h1 class="font-bold text-xl">Satisfaction Guarantee</h1>
+            <p>Your Satisfaction is our priority.We ensure the best shopping experience.</p>
+        </div>
+        <div class="bg-gray-100 p-2">
+            <i class="fa-solid fa-broom" style="color: rgb(0, 1, 2);font-size: 30px;"></i>
+            <h1 class="font-bold text-xl">New Arrival Everyday</h1>
+            <p>Discover the lastest styles and trendy products every day.</p>
+        </div>
+        <div class="bg-gray-100 p-2">
+            <i class="fa-solid fa-truck-fast" style="color: rgb(0, 1, 2);font-size: 30px;"></i>
+            <h1 class="font-bold text-xl">Fast & Free Shipping</h1>
+            <p>Enjoy fast and free delivery on your orders.</p>
+        </div>
+    </div>
+    <div id="new-arrivals">
+        <h1 class="font-bold text-2xl md:text-3xl p-5">New Arrivals</h1>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-5">
+        <div class="relative">
+            <img src="./images/kurta1.jpg" class="w-full h-48 md:h-72 object-cover rounded-lg brightness-25">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 bg-white rounded-lg px-4 py-3 whitespace-nowrap">Shop Now &rarr;</button>
+        </div>
+        <div class=" relative">
+            <img src="./images/kurta2.jpg" class="w-full h-48 md:h-72 object-cover rounded-lg brightness-25">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 bg-white rounded-lg px-4 py-3 whitespace-nowrap">Shop Now &rarr;</button>
+        </div>
+        <div class="relative">
+            <img src="./images/kurta3.jpg" class="w-full h-48 md:h-72 object-cover rounded-lg brightness-25">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 bg-white rounded-lg px-4 py-3 whitespace-nowrap">Shop Now &rarr;</button>
+        </div>
+        <div class="relative">
+            <img src="./images/kurta4.jpg" class="w-full h-48 md:h-72 object-cover rounded-lg brightness-25">
+            <button class="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 bg-white rounded-lg px-4 py-3 whitespace-nowrap">Shop Now &rarr;</button>
+        </div>
+    </div>
+    <div id="most-wanted">
+        <h1 class="font-bold text-2xl md:text-3xl p-5">Most Wanted</h1>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 p-5">
+        <div class="relative">
+          <img src="./images/most1.jpg" class="w-full h-48 md:h-64 object-cover">
+          <span class="absolute top-2 left-2 bg-red-600 text-white text-xl px-3 py-1 rounded">sale</span> 
+          <i class="fa-regular fa-heart absolute bottom-2 right-2 text-2xl"></i>
+        </div>
+        <div class="relative">
+          <img src="./images/most2.jpg" class="w-full h-48 md:h-64 object-cover">
+          <span class="absolute top-2 left-2 bg-red-600 text-white text-xl px-3 py-1 rounded">sale</span> 
+          <i class="fa-regular fa-heart absolute bottom-2 right-2 text-2xl"></i>
+        </div>
+        <div class="relative">
+          <img src="./images/most3.jpg" class="w-full h-48 md:h-64 object-cover">
+          <span class="absolute top-2 left-2 bg-red-600 text-white text-xl px-3 py-1 rounded">sale</span> 
+          <i class="fa-regular fa-heart absolute bottom-2 right-2 text-2xl"></i>
+        </div>
+        <div class="relative">
+          <img src="./images/most4.jpg" class="w-full h-48 md:h-64 object-cover">
+          <span class="absolute top-2 left-2 bg-red-600 text-white text-xl px-3 py-1 rounded">sale</span> 
+          <i class="fa-regular fa-heart absolute bottom-2 right-2 text-2xl"></i>
+        </div>
+        <div class="relative">
+          <img src="./images/most5.jpg" class="w-full h-48 md:h-64 object-cover">
+          <span class="absolute top-2 left-2 bg-red-600 text-white text-xl px-3 py-1 rounded">sale</span> 
+          <i class="fa-regular fa-heart absolute bottom-2 right-2 text-2xl"></i>
+        </div>
+    </div>
+    <div class="bg-orange-100 relative my-5 p-4 md:h-80 flex flex-col md:flex-row items-center gap-4 m-5">
+    <div class="w-full md:w-1/2">
+        <img src="./images/offerfooter.jpg" class="w-full h-auto md:h-64 object-contain">
+</div>
+<div class="w-full md:w-1/2 md:p-5">
+    <h1 class="text-3xl md:text-3xl font-bold text-orange-950">Limited Offer</h1>
+    <h2 class="font-bold text-orange-950 text-lg md:text-2xl mt-2">35% OFF on this for the first 30 customers</h2>
+    <button class="bg-orange-600 text-xl p-2 rounded font-bold mt-3">Shop Now &rarr;</button>
+</div>
+    </div>
+    <div class="flex flex-col items-center gap-2">
+        <h1 class="text-2xl md:text-4xl font-bold">JOIN OUR NEWS LETTER</h1>
+        <h2 class="text-xs md:text-2xl">Signup for our email newspaper to get exclusive discounts, updates, and more</h2>
+        <input type="text" class= "w-1/2 md:w-1/2 border-2 border-black border-solid mt-1 p-2">
+        <button class="bg-black text-white text-base md:text-2xl font-bold p-3 rounded">Subscribe &rarr;</button>
+    </div>
+        <script src="index.js"></script>
+</body>
+<!-- footer section -->
+<footer>
+    <div class="bg-[#101422] text-white p-5 mt-10">
+<h1 class="font-bold text-4xl md:text-3xl">Nostra</h1>
+<p class="mt-3 text-xl md:text-2xl">Discover the latest fashion trends and find your perfect style with Nostra.Shop your favourite outfits at affortable prices.</p>
+<p class="mt-3 text-xl md:text-2xl">Follow us on social media for the latest updates and offers.</p>
+<!-- Social media -->
+ <p class="mt-3">@ 2026 Nostra.com</p>
+ <div class="flex gap-6 text-2xl mb-5 mt-2">
+    <a href="https://www.instagram.com" class="hover:text-orange-400">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="http://www.twitter.com" class="hover:text-orange-400">
+        <i class="fa-brands fa-twitter"></i>
+    </a>
+
+    <a href="https://www.facebook.com" class="hover:text-orange-400">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+ </div>
+
+</div>
+</footer>
+</html>
