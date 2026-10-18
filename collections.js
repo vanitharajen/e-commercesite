@@ -53,6 +53,13 @@ function filterProducts() {
                 ? ""
                 : "none";
     });
+    const visibleProducts = [...products].filter(
+    product => product.style.display !== "none"
+);
+
+document.getElementById("noResults").style.display =
+    visibleProducts.length === 0 ? "block" : "none";
+    
 }
 
 searchInput.addEventListener("input", filterProducts);
